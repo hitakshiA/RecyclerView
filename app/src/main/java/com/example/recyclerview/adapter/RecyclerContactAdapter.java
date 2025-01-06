@@ -1,3 +1,6 @@
+package com.example.recyclerview.adapter;
+
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,7 +21,7 @@ public class RecyclerContactAdapter extends RecyclerView.Adapter<RecyclerContact
      ArrayList<Contact_model> arrcontacts;
 
 
-   RecyclerContactAdapter(Context context, ArrayList<Contact_model> arrcontacts){
+  public RecyclerContactAdapter(Context context, ArrayList<Contact_model> arrcontacts){
   this.context = context;
   this.arrcontacts= arrcontacts;
    }
