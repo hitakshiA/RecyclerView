@@ -2,11 +2,11 @@ package com.example.recyclerview;
 
 import android.os.Bundle;
 //import com.example.recyclerview.RecyclerContactAdapter;
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.Context;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import com.example.recyclerview.adapter.RecyclerContactAdapter;
+
 
 import java.util.ArrayList;
 
@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         arrcontacts.add(new Contact_model(R.drawable.img5 , "Isabel" , "6795672345"));
 
         // Error  RecyclerContactAdapter adapter = new RecyclerContactAdapter(this , arrcontacts);
+        RecyclerContactAdapter adapter = new RecyclerContactAdapter(this, arrcontacts);
+        recyclerview.setAdapter(adapter);
 
 
         // Error recyclerview.setAdapter(adapter);
